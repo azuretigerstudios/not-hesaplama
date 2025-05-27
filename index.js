@@ -1,3 +1,60 @@
+function sinavsonuc(){
+    try
+    {
+let not1=parseFloat(document.getElementById('vize').value);
+let not2=parseFloat(document.getElementById('final').value);
+let sonuc=(not1*0.3)+(not2*0.7);
+if (sonuc<=100&&sonuc>=84) {
+    document.getElementById('sonuc').textContent="AA - " + sonuc;
+}
+else if (sonuc>=77&&sonuc<83) {
+    document.getElementById('sonuc').textContent="AB - " + sonuc;
+}
+
+else if (sonuc>=71&&sonuc<76) {
+    document.getElementById('sonuc').textContent="BA - " + sonuc;
+}
+
+else if (sonuc>=66&&sonuc<70) {
+    document.getElementById('sonuc').textContent="BB - " + sonuc;
+}
+
+else if (sonuc>=61&&sonuc<65) {
+    document.getElementById('sonuc').textContent="BC - "+sonuc;
+}
+
+else if (sonuc>=56&&sonuc<60) {
+    document.getElementById('sonuc').textContent="CB - " + sonuc;
+}
+
+else if (sonuc>=50&&sonuc<55) {
+    document.getElementById('sonuc').textContent="CC - " + sonuc;
+}
+
+else if (sonuc>=46&&sonuc<49) {
+    document.getElementById('sonuc').textContent="CD - " + sonuc;
+}
+
+else if (sonuc>=40&&sonuc<45) {
+    document.getElementById('sonuc').textContent="DC - " + sonuc;
+}
+
+else if (sonuc>=30&&sonuc<39) {
+    document.getElementById('sonuc').textContent="DD - " + sonuc;
+}
+
+else if (sonuc>=0&&sonuc<29) {
+    document.getElementById('sonuc').textContent="FF - " + sonuc;
+}
+    }
+    catch(exception) {
+  document.getElementById("sonuc").innerHTML = exception.message;
+}
+}
+// Initialize Lucide icons
+//lucide.createIcons();
+
+
 /*const fruits=['apples','oranges','pears'];
 fruits[3]='grapes';
 fruits.push('bananas');
@@ -140,58 +197,3 @@ const person2 = new Person('Cadis Etrama', 'Di Raizel', '1-12-1950');
 
 console.log(person2.getBirthYear());
 console.log(person2.getFullName()); */
-function sinavsonuc(){
-    try
-    {
-let not1=parseFloat(document.getElementById('vize').value);
-let not2=parseFloat(document.getElementById('final').value);
-let sonuc=(not1*0.3)+(not2*0.7);
-if (sonuc<=100&&sonuc>=84) {
-    document.getElementById('sonuc').textContent="AA - " + sonuc;
-}
-else if (sonuc>=77&&sonuc<83) {
-    document.getElementById('sonuc').textContent="AB - " + sonuc;
-}
-
-else if (sonuc>=71&&sonuc<76) {
-    document.getElementById('sonuc').textContent="BA - " + sonuc;
-}
-
-else if (sonuc>=66&&sonuc<70) {
-    document.getElementById('sonuc').textContent="BB - " + sonuc;
-}
-
-else if (sonuc>=61&&sonuc<65) {
-    document.getElementById('sonuc').textContent="BC - "+sonuc;
-}
-
-else if (sonuc>=56&&sonuc<60) {
-    document.getElementById('sonuc').textContent="CB - " + sonuc;
-}
-
-else if (sonuc>=50&&sonuc<55) {
-    document.getElementById('sonuc').textContent="CC - " + sonuc;
-}
-
-else if (sonuc>=46&&sonuc<49) {
-    document.getElementById('sonuc').textContent="CD - " + sonuc;
-}
-
-else if (sonuc>=40&&sonuc<45) {
-    document.getElementById('sonuc').textContent="DC - " + sonuc;
-}
-
-else if (sonuc>=30&&sonuc<39) {
-    document.getElementById('sonuc').textContent="DD - " + sonuc;
-}
-
-else if (sonuc>=0&&sonuc<29) {
-    document.getElementById('sonuc').textContent="FF - " + sonuc;
-}
-    }
-    catch(exception) {
-  document.getElementById("sonuc").innerHTML = exception.message;
-}
-}
-// Initialize Lucide icons
-lucide.createIcons();
